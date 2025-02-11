@@ -2,3 +2,9 @@ requests
 beautifulsoup4
 transformers
 sentence-transformers
+nltk 
+google-api-python-client 
+serpapi 
+scikit-learn 
+numpy 
+pandas

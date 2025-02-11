@@ -112,5 +112,14 @@ def check_google_scholar(url: str) -> int:
         return 0  # Assume no citations found
 
 
+# User input prompt and URL to check
+user_prompt = "Is it a bad investment to buy a house as a single male under the age of 30?"
+url_to_check = "https://www.quickenloans.com/learn/homes-for-single-people"
+
+# Evaluate the validity of the given URL
+result = rate_url_validity(user_prompt, url_to_check)
+
+# Display the results
+print(result)
 
 

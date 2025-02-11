@@ -1,0 +1,10 @@
+transformers
+torch
+beautifulsoup4
+requests
+nltk
+google-api-python-client
+serpapi
+scikit-learn
+numpy
+pandas

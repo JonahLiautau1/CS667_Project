@@ -26,17 +26,6 @@ You use a try and except statement so if an error occurs within a function, it i
 The try part is the code that is being tried and contains the code that may fail. 
 The except part occurs the except block handles the error gracefully by returning an empty string instead of crashing.
 
-Example:
-def fetch_page_content(self, url: str) -> str:
-    """ Fetches and extracts text content from the given URL. """
-    try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        return " ".join([p.text for p in soup.find_all("p")])  # Extract paragraph text
-    except requests.RequestException:
-        return ""  # Fail gracefully by returning an empty string
-
 ## 6. What's a standard practice of a return statement?
 A return statement should communicate the function's outcome.
 Functions should return values based on their operations.
